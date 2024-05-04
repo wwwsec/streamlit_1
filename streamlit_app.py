@@ -8,7 +8,8 @@ st.header('st.write')
 # 样例 1
 
 st.write('Hello, *World!* :sunglasses:')
-st.code("hello world")
+
+st.code("hello world", language="python", line_numbers=False)
 
 # 样例 2
 
