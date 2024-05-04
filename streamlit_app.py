@@ -33,7 +33,7 @@ def show_content(menu):
         showd()
 
 
-
+st.sidebar.title("xx")
 # 在左侧栏添加菜单项
 menu_selection = st.sidebar.radio("选择菜单项", ['A', 'B', 'C', 'D'])
 
