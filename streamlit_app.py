@@ -1,6 +1,11 @@
 import streamlit as st
+import pandas as pd
+import numpy as np
 
-color = st.select_slider(
-    "Select a color of the rainbow",
-    options=["red", "orange", "yellow", "green", "blue", "indigo", "violet"])
-st.write("My favorite color is", color)
+st.header('Line chart')
+
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['a', 'b', 'c'])
+
+st.line_chart(chart_data)
