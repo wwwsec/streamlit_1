@@ -1,18 +1,7 @@
 import streamlit as st
 
-st.title('Customizing the theme of Streamlit apps')
+st.title('st.secrets')
 
-st.write('Contents of the `.streamlit/config.toml` file of this app')
+st.write(st.secrets['message'])
 
-st.code("""
-[theme]
-primaryColor="white"
-backgroundColor="#ff0000"
-secondaryBackgroundColor="#00ff00"
-textColor="#FFFFFF"
-font="monospace"
-""")
-
-number = st.sidebar.slider('Select a number:', 0, 10, 5)
-st.sidebar.write("hello world")
-st.write('Selected number from slider widget is:', number)
+st.write(st.secrets)
