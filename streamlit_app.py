@@ -9,7 +9,7 @@ st.header('st.write')
 
 st.write('Hello, *World!* :sunglasses:')
 
-st.code("hello world", language="python", line_numbers=False)
+st.code("import os\nprint('hello world'", language="python", line_numbers=False)
 
 # 样例 2
 
