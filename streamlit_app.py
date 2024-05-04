@@ -8,6 +8,9 @@ content_D = "这是菜单项 D 的内容。"
 
 def showa():
     st.write(content_A)
+    st.write(content_A)
+    st.write(content_A)
+    st.write(content_A)
 
 def showb():
     st.write(content_B)
