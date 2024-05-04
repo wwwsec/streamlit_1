@@ -17,25 +17,12 @@ def show_content(menu):
     elif menu == 'D':
         st.write(content_D)
 
-# 在左侧栏添加链接形式的菜单项
+# 在左侧栏显示传统的导航菜单
+st.sidebar.title('菜单')
 menu_selection = st.sidebar.radio(
     "",
-    [
-        '<a href="#A" style="text-decoration: none; color: inherit;">A</a>',
-        '<a href="#B" style="text-decoration: none; color: inherit;">B</a>',
-        '<a href="#C" style="text-decoration: none; color: inherit;">C</a>',
-        '<a href="#D" style="text-decoration: none; color: inherit;">D</a>'
-    ],
-    format_func=lambda x: "",
-    unsafe_allow_html=True  # 允许在 Markdown 中使用 HTML
+    ['A', 'B', 'C', 'D']
 )
 
 # 在右侧页面显示相应内容
-if menu_selection == '<a href="#A" style="text-decoration: none; color: inherit;">A</a>':
-    show_content('A')
-elif menu_selection == '<a href="#B" style="text-decoration: none; color: inherit;">B</a>':
-    show_content('B')
-elif menu_selection == '<a href="#C" style="text-decoration: none; color: inherit;">C</a>':
-    show_content('C')
-elif menu_selection == '<a href="#D" style="text-decoration: none; color: inherit;">D</a>':
-    show_content('D')
+show_content(menu_selection)
