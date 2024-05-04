@@ -26,7 +26,8 @@ menu_selection = st.sidebar.radio(
         '<a href="#C" style="text-decoration: none; color: inherit;">C</a>',
         '<a href="#D" style="text-decoration: none; color: inherit;">D</a>'
     ],
-    format_func=lambda x: ""
+    format_func=lambda x: "",
+    unsafe_allow_html=True  # 允许在 Markdown 中使用 HTML
 )
 
 # 在右侧页面显示相应内容
